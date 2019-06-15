@@ -4,13 +4,13 @@ import 'package:flutter/services.dart';
 void main() => runApp(MyApp());
 
 const List<List<int>> _pixels = [
-  [1, 1, 1, 1, 1, 0, 1, 1, 0],
-  [0, 0, 0, 0, 1, 1, 0, 0, 1],
-  [0, 0, 0, 1, 0, 1, 0, 0, 1],
-  [0, 0, 1, 0, 0, 1, 0, 0, 1],
-  [0, 1, 0, 0, 0, 1, 0, 0, 1],
-  [1, 0, 0, 0, 0, 1, 0, 0, 1],
-  [0, 0, 0, 0, 0, 0, 1, 1, 0],
+  [1, 1, 1, 1, 0, 0, 1, 1, 0],
+  [1, 0, 0, 1, 0, 1, 0, 0, 1],
+  [1, 0, 0, 1, 0, 1, 0, 0, 1],
+  [0, 1, 1, 0, 0, 1, 0, 0, 1],
+  [1, 0, 0, 1, 0, 1, 0, 0, 1],
+  [1, 0, 0, 1, 0, 1, 0, 0, 1],
+  [1, 1, 1, 1, 0, 0, 1, 1, 0],
 ];
 
 class MyApp extends StatelessWidget {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter kAnimation 70K',
+      title: 'Flutter kAnimation 80K',
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
