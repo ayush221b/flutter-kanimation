@@ -4,13 +4,13 @@ import 'package:flutter/services.dart';
 void main() => runApp(MyApp());
 
 const List<List<int>> _pixels = [
-  [1, 1, 1, 1, 0, 0, 1, 1, 0],
-  [1, 0, 0, 1, 0, 1, 0, 0, 1],
-  [1, 0, 0, 1, 0, 1, 0, 0, 1],
-  [1, 1, 1, 1, 0, 1, 0, 0, 1],
-  [0, 0, 1, 0, 0, 1, 0, 0, 1],
-  [0, 1, 0, 0, 0, 1, 0, 0, 1],
-  [1, 0, 0, 0, 0, 0, 1, 1, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0],
+  [1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1],
+  [0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1],
+  [0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1],
+  [0, 1, 1, 1, 0, 1, 1, 0, 0, 1, 1, 0],
 ];
 
 class MyApp extends StatelessWidget {
@@ -54,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                for (int x = 0; x < 9; x++)
+                for (int x = 0; x < 12; x++)
                   Switch(
                     value: _on && _pixels[y][x] > 0,
                     onChanged: (_) => _toggle(),
