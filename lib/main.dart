@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter kAnimation 90K',
+      title: 'Flutter kAnimation 100K',
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
